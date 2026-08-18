@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a0a09">
+  <meta name="theme-color" content="#090908">
   <meta name="description" content="WINEFUNDAY SOCIAL CLUB — Serious Wine. Not So Serious. Tegernsee · Est. 2026.">
   <title>WINEFUNDAY SOCIAL CLUB</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <main class="page">
     <div class="grain" aria-hidden="true"></div>
-    <div class="halo" aria-hidden="true"></div>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
 
     <header class="topbar">
-      <div class="monogram" aria-label="WFD">WFD</div>
+      <div class="sigil" aria-label="WFD">
+        <span class="sigil-w">W</span><span class="sigil-f">F</span><span class="sigil-d">D</span>
+      </div>
       <div class="place">TEGERNSEE <span>·</span> EST. 2026</div>
     </header>
 
@@ -32,9 +35,12 @@
 
         <p class="claim">SERIOUS WINE.<br><span>NOT SO SERIOUS.</span></p>
 
-        <div class="rule"></div>
+        <div class="microline">
+          <span></span>
+          <small>MEMBERS · EVENTS · WINE · CULTURE</small>
+        </div>
 
-        <div class="tease">
+        <div class="tease-block">
           <p class="pour">SOMETHING IS <em>POURING.</em></p>
           <p class="sub">Great bottles. Good people. No stiff rules.</p>
         </div>
@@ -47,18 +53,29 @@
         </div>
       </div>
 
-      <div class="glass-stage" aria-hidden="true">
-        <div class="glass">
-          <div class="bowl">
-            <div class="wine">
-              <div class="wine-surface"></div>
-            </div>
-            <div class="shine"></div>
-          </div>
-          <div class="stem"></div>
-          <div class="foot"></div>
-        </div>
-        <div class="glass-caption">THE FIRST POUR · 2026</div>
+      <div class="art" aria-hidden="true">
+        <svg class="glassline" viewBox="0 0 420 620" role="img">
+          <path class="draw bowl" pathLength="1"
+            d="M118 83
+               C137 67, 283 67, 302 83
+               C308 111, 307 167, 300 213
+               C293 260, 273 302, 244 324
+               C226 338, 194 338, 176 324
+               C147 302, 127 260, 120 213
+               C113 167, 112 111, 118 83Z" />
+          <path class="draw rim" pathLength="1"
+            d="M119 84 C158 102, 263 102, 301 84" />
+          <path class="draw wine-line" pathLength="1"
+            d="M126 220 C166 232, 255 232, 294 220" />
+          <path class="draw stem" pathLength="1"
+            d="M210 337 L210 514" />
+          <path class="draw base" pathLength="1"
+            d="M151 536 C178 547, 242 547, 269 536" />
+          <path class="draw gesture" pathLength="1"
+            d="M286 122 C310 159, 321 202, 312 244" />
+        </svg>
+        <div class="wine-fill"></div>
+        <div class="art-label">THE FIRST POUR · 2026</div>
       </div>
     </section>
 
