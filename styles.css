@@ -203,8 +203,8 @@ footer{color:var(--muted);border-top:1px solid var(--line);padding-top:17px}
   transform-box:fill-box;
   transform-origin:center;
   animation:
-    surfaceIn .9s ease 1.9s forwards,
-    surfaceRock 4.6s ease-in-out 2.8s infinite;
+    surfaceIn .45s ease 11.1s forwards,
+    surfaceRock 4.6s ease-in-out 11.55s infinite;
 }
 
 /* Very subtle surface movement — enough to feel alive, never playful */
@@ -219,13 +219,13 @@ footer{color:var(--muted);border-top:1px solid var(--line);padding-top:17px}
 }
 .wave-a{
   animation:
-    waveIn .8s ease 2.1s forwards,
-    waveMoveA 4.2s ease-in-out 2.9s infinite;
+    waveIn .55s ease 11.15s forwards,
+    waveMoveA 4.2s ease-in-out 11.7s infinite;
 }
 .wave-b{
   animation:
-    waveIn .8s ease 2.2s forwards,
-    waveMoveB 4.8s ease-in-out 3.1s infinite;
+    waveIn .55s ease 11.2s forwards,
+    waveMoveB 4.8s ease-in-out 11.8s infinite;
 }
 
 @keyframes liquidRise{
@@ -263,3 +263,8 @@ footer{color:var(--muted);border-top:1px solid var(--line);padding-top:17px}
   .wine-surface-svg{animation:none;opacity:1}
   .surface-wave{animation:none;opacity:.45}
 }
+
+
+/* V3.6 timing:
+   fill: 1.6s -> 11.1s
+   surface movement begins only after filling is complete */
