@@ -168,3 +168,42 @@ footer{color:var(--muted);border-top:1px solid var(--line);padding-top:17px}
   footer{font-size:8px;letter-spacing:.11em}
   .footer-center{display:none}
 }
+
+
+/* V3.2 refinements */
+@media (min-width: 921px){
+  .glassline{
+    width:min(437px,115%);
+  }
+  .art{
+    transform:translateX(-2%);
+  }
+}
+
+.wine-liquid{
+  fill:#3a0f16;
+  opacity:.78;
+  animation-duration:6.5s;
+  animation-delay:1.6s;
+}
+
+.wine-surface-svg{
+  fill:rgba(72,18,28,.72);
+  stroke:rgba(154,72,84,.62);
+  animation-duration:1.1s;
+  animation-delay:5.2s;
+}
+
+/* Make the filling movement deliberately noticeable */
+@keyframes liquidRise{
+  0%{transform:scaleY(0)}
+  18%{transform:scaleY(.08)}
+  55%{transform:scaleY(.48)}
+  82%{transform:scaleY(.82)}
+  100%{transform:scaleY(1)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .wine-liquid{animation:none;transform:scaleY(1)}
+  .wine-surface-svg{animation:none;opacity:1}
+}
