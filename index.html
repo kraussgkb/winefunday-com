@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=32">
+  <link rel="stylesheet" href="styles.css?v=33">
 </head>
 <body>
   <main class="page">
@@ -74,7 +74,16 @@
           <g clip-path="url(#wineClip)">
             <rect class="wine-liquid" x="108" y="220" width="205" height="118" fill="url(#wineGradient)"/>
             <ellipse class="wine-surface-svg" cx="210" cy="220" rx="84" ry="11"/>
+            <path class="surface-wave wave-a"
+              d="M126 220 C150 210, 173 230, 198 220 C224 210, 250 231, 294 220"/>
+            <path class="surface-wave wave-b"
+              d="M126 222 C156 232, 181 212, 207 222 C236 233, 260 212, 294 222"/>
+            <circle class="splash splash-a" cx="211" cy="216" r="3.2"/>
+            <circle class="splash splash-b" cx="223" cy="223" r="2.2"/>
           </g>
+
+          <path class="pour-stream"
+            d="M246 -18 C240 32, 226 86, 217 138 C213 164, 211 188, 210 220"/>
 
           <path class="draw bowl" pathLength="1"
             d="M118 83
@@ -90,8 +99,6 @@
             d="M210 337 L210 514" />
           <path class="draw base" pathLength="1"
             d="M151 536 C178 547, 242 547, 269 536" />
-          <path class="draw gesture" pathLength="1"
-            d="M286 122 C310 159, 321 202, 312 244" />
         </svg>
         <div class="art-label">THE FIRST POUR · 2026</div>
       </div>
