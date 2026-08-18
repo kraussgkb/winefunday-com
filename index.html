@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=31">
 </head>
 <body>
   <main class="page">
@@ -55,6 +55,27 @@
 
       <div class="art" aria-hidden="true">
         <svg class="glassline" viewBox="0 0 420 620" role="img">
+          <defs>
+            <clipPath id="wineClip">
+              <path d="M118 83
+                       C137 67, 283 67, 302 83
+                       C308 111, 307 167, 300 213
+                       C293 260, 273 302, 244 324
+                       C226 338, 194 338, 176 324
+                       C147 302, 127 260, 120 213
+                       C113 167, 112 111, 118 83Z" />
+            </clipPath>
+            <linearGradient id="wineGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f2efe7" stop-opacity=".12"/>
+              <stop offset="100%" stop-color="#f2efe7" stop-opacity=".035"/>
+            </linearGradient>
+          </defs>
+
+          <g clip-path="url(#wineClip)">
+            <rect class="wine-liquid" x="108" y="220" width="205" height="118" fill="url(#wineGradient)"/>
+            <ellipse class="wine-surface-svg" cx="210" cy="220" rx="84" ry="11"/>
+          </g>
+
           <path class="draw bowl" pathLength="1"
             d="M118 83
                C137 67, 283 67, 302 83
@@ -65,8 +86,6 @@
                C113 167, 112 111, 118 83Z" />
           <path class="draw rim" pathLength="1"
             d="M119 84 C158 102, 263 102, 301 84" />
-          <path class="draw wine-line" pathLength="1"
-            d="M126 220 C166 232, 255 232, 294 220" />
           <path class="draw stem" pathLength="1"
             d="M210 337 L210 514" />
           <path class="draw base" pathLength="1"
@@ -74,7 +93,6 @@
           <path class="draw gesture" pathLength="1"
             d="M286 122 C310 159, 321 202, 312 244" />
         </svg>
-        <div class="wine-fill"></div>
         <div class="art-label">THE FIRST POUR · 2026</div>
       </div>
     </section>

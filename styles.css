@@ -112,10 +112,18 @@ h1 span{display:block}
 .stem{animation-delay:.5s}
 .base{animation-delay:.68s}
 .gesture{animation-delay:.9s;stroke:rgba(242,239,231,.22)}
-.wine-fill{
-  position:absolute;width:126px;height:0;top:228px;border-radius:0 0 58px 58px;
-  background:linear-gradient(to bottom,rgba(242,239,231,.085),rgba(242,239,231,.025));
-  opacity:.8;animation:fillwine 1.8s cubic-bezier(.2,.75,.2,1) 1.15s forwards
+.wine-liquid{
+  transform-box:fill-box;
+  transform-origin:center bottom;
+  transform:scaleY(0);
+  animation:liquidRise 1.8s cubic-bezier(.2,.75,.2,1) 1.05s forwards;
+}
+.wine-surface-svg{
+  fill:rgba(242,239,231,.035);
+  stroke:rgba(242,239,231,.33);
+  stroke-width:1;
+  opacity:0;
+  animation:surfaceIn .7s ease 1.55s forwards;
 }
 .art-label{
   position:absolute;bottom:44px;font-size:8px;letter-spacing:.24em;color:var(--muted);
@@ -126,19 +134,18 @@ footer{color:var(--muted);border-top:1px solid var(--line);padding-top:17px}
 .footer-center{color:#6e6b65}
 
 @keyframes draw{to{stroke-dashoffset:0}}
-@keyframes fillwine{to{height:96px}}
+@keyframes liquidRise{to{transform:scaleY(1)}}
+@keyframes surfaceIn{to{opacity:1}}
 
 @media(prefers-reduced-motion:reduce){
-  .draw{animation:none;stroke-dashoffset:0}.wine-fill{animation:none;height:96px}
-  .button{transition:none}
+  .draw{animation:none;stroke-dashoffset:0}  .button{transition:none}
 }
 
 @media(max-width:920px){
   .hero{grid-template-columns:1fr;gap:20px;padding:54px 0 32px}
   .art{position:absolute;right:-56px;top:49%;transform:translateY(-50%);opacity:.16;min-height:0}
   .glassline{width:320px}
-  .wine-fill{display:none}
-  .art-label{display:none}
+    .art-label{display:none}
   .copy{position:relative;z-index:4}
 }
 
