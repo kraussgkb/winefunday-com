@@ -1,0 +1,1 @@
+Vercel preview trigger for branch redesign-2026-09 — 2026-09-08.
